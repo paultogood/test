@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+<title>Login Page</title>
+
+
+
+</head>
+
+<body bgcolor="#ffffff" onload="snd5()">
+
+This is a secure Page.
+Please login with your username password.
+To obtain a password please contact info@toogoodphotography.com
+
+<script language="javascript">
+function pasuser(form) {
+if (form.id.value=="id") { 
+if (form.pass.value=="password") {
+location="fashion.html" 
+} else { 
+alert("Invalid Password") 
+}} else { alert("Invalid UserID")
+}
+}
+</script>
+
+<center>
+<table bgcolor="white" cellpadding="12" border="1">
+<tr>
+<td><b>UserID:</b></td>
+<td><form name="login"><input name="id" type="text"></td>
+</tr>
+<tr>
+<td><b>Password:</b></td>
+<td><input name="pass" type="password"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="Login" onClick="pasuser(this.form)">
+</td>
+</tr>
+</table>
+</center
+
+
+
+
+
+
+</body>
+
+</html>
+

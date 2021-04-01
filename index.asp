@@ -1,3 +1,18 @@
+<%
+urlEntered=request.ServerVariables("HTTP_HOST")
+	IF urlEntered="www.ottawafashionweek.com" THEN
+	Response.redirect("/ofw/")
+	ELSEIF urlEntered="ottawafashionweek.com" THEN
+	Response.redirect("/ofw/")
+	ELSEIF urlEntered="www.ottawafashionmagazine.com" THEN
+	Response.redirect("/ofm/")
+	ELSEIF urlEntered="ottawafashionmagazine.com" THEN
+	Response.redirect("/ofm/")
+ELSE
+'show this page
+END IF
+%>
+
 <html>
 
 <head>
